@@ -53,36 +53,36 @@ static const unsigned int alphas[][3]      = {
 	[SchemeSel]  = { OPAQUE, baralpha, borderalpha },
 };
 #endif // ALPHA_PATCH
-
 #if XRESOURCES_PATCH
 static char *colors[][2] =
 #else
 static const char *colors[][2] =
 #endif // XRESOURCES_PATCH
 {
-	/*               fg         bg       */
-	[SchemeNorm] = { "#bbbbbb", "#222222" },
-	[SchemeSel]  = { "#eeeeee", "#005577" },
-	[SchemeOut]  = { "#000000", "#00ffff" },
-	#if MORECOLOR_PATCH
-	[SchemeMid]  = { "#eeeeee", "#770000" },
-	#endif // MORECOLOR_PATCH
-	#if HIGHLIGHT_PATCH || FUZZYHIGHLIGHT_PATCH
-	[SchemeSelHighlight]  = { "#ffc978", "#005577" },
-	[SchemeNormHighlight] = { "#ffc978", "#222222" },
-	#endif // HIGHLIGHT_PATCH | FUZZYHIGHLIGHT_PATCH
-	#if HIGHPRIORITY_PATCH
-	[SchemeHp]   = { "#bbbbbb", "#333333" },
-	#endif // HIGHPRIORITY_PATCH
+       /*               fg         bg       */
+       [SchemeNorm] = { "#bbbbbb", "#222222" },
+       [SchemeSel]  = { "#eeeeee", "#005577" },
+       [SchemeOut]  = { "#000000", "#00ffff" },
+       #if MORECOLOR_PATCH
+       [SchemeMid]  = { "#eeeeee", "#770000" },
+       #endif // MORECOLOR_PATCH
+       #if HIGHLIGHT_PATCH || FUZZYHIGHLIGHT_PATCH
+       [SchemeSelHighlight]  = { "#ffc978", "#005577" },
+       [SchemeNormHighlight] = { "#ffc978", "#222222" },
+       #endif // HIGHLIGHT_PATCH | FUZZYHIGHLIGHT_PATCH
+       #if HIGHPRIORITY_PATCH
+       [SchemeHp]   = { "#bbbbbb", "#333333" },
+       #endif // HIGHPRIORITY_PATCH
 };
+
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
-static unsigned int lines      = 0;
+static unsigned int lines      = 4;
 #if GRID_PATCH
 /* -g option; if nonzero, dmenu uses a grid comprised of columns and lines */
-static unsigned int columns    = 0;
+static unsigned int columns    = 3;
 #endif // GRID_PATCH
 #if LINE_HEIGHT_PATCH
-static unsigned int lineheight = 0;         /* -h option; minimum height of a menu line     */
+static unsigned int lineheight = 5;         /* -h option; minimum height of a menu line     */
 #endif // LINE_HEIGHT_PATCH
 #if NAVHISTORY_PATCH
 static unsigned int maxhist    = 15;

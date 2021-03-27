@@ -21,7 +21,7 @@
 /* This patch centers dmenu in the middle of the screen.
  * https://tools.suckless.org/dmenu/patches/center/
  */
-#define CENTER_PATCH 0
+#define CENTER_PATCH 1
 
 /* This patch enables color emoji in dmenu by removing a workaround for a BadLength error
  * in the Xft library when color glyphs are used.
@@ -48,25 +48,25 @@
  * portions of the string to be matched.
  * https://tools.suckless.org/dmenu/patches/fuzzymatch/
  */
-#define FUZZYMATCH_PATCH 0
+#define FUZZYMATCH_PATCH 1
 
 /* Allows dmenu's entries to be rendered in a grid by adding a new -g flag to specify
  * the number of grid columns. The -g and -l options can be used together to create a
  * G columns * L lines grid.
  * https://tools.suckless.org/dmenu/patches/grid/
  */
-#define GRID_PATCH 0
+#define GRID_PATCH 1
 
 /* This patch highlights the individual characters of matched text for each dmenu list entry.
  * The fuzzy highlight patch takes precedence over this patch.
  * https://tools.suckless.org/dmenu/patches/highlight/
  */
-#define HIGHLIGHT_PATCH 0
+#define HIGHLIGHT_PATCH 1
 
 /* This will automatically sort the search result so that high priority items are shown first.
  * https://tools.suckless.org/dmenu/patches/highpriority/
  */
-#define HIGHPRIORITY_PATCH 0
+#define HIGHPRIORITY_PATCH 1
 
 /* This patch causes dmenu to print out the current text each time a key is pressed.
  * https://tools.suckless.org/dmenu/patches/incremental/
@@ -82,7 +82,7 @@
  * is only one matching option left.
  * https://tools.suckless.org/dmenu/patches/instant/
  */
-#define INSTANT_PATCH 0
+#define INSTANT_PATCH 1
 
 /* This patch adds basic support for json files.
  * This patch depends on the jansson library. Uncomment the relevant line in config.mk when
@@ -101,7 +101,7 @@
  * integrate dmenu with other UI elements that require a particular vertical size.
  * http://tools.suckless.org/dmenu/patches/line-height/
  */
-#define LINE_HEIGHT_PATCH 0
+#define LINE_HEIGHT_PATCH 1
 
 /* This patch adds a -wm flag which sets override_redirect to false; thus letting your window
  * manager manage the dmenu window.
@@ -121,7 +121,7 @@
 /* This patch adds basic mouse support for dmenu.
  * https://tools.suckless.org/dmenu/patches/mouse-support/
  */
-#define MOUSE_SUPPORT_PATCH 0
+#define MOUSE_SUPPORT_PATCH 1
 
 /* Without this patch when you press Ctrl+Enter dmenu just outputs current item and it is not
  * possible to undo that.
@@ -156,7 +156,7 @@
 /* Adds text which displays the number of matched and total items in the top right corner of dmenu.
  * https://tools.suckless.org/dmenu/patches/numbers/
  */
-#define NUMBERS_PATCH 0
+#define NUMBERS_PATCH 1
 
 /* This patch adds simple markup for dmenu using pango markup.
  * This depends on the pango library v1.44 or greater.
